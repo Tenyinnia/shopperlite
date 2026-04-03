@@ -85,7 +85,7 @@ npm run dev
 Open http://localhost:5173 to view the app in your browser.
 ```
 
-📝 Lessons Learned
+### 📝 Lessons Learned
 Managing global state with React Context
 Handling complex filtering and search with URL params
 Building reusable components and custom hooks
@@ -93,9 +93,9 @@ Creating smooth user experiences with loading and empty states
 Writing clean, maintainable React code
 
 
-🙋‍♂️ About Me
-Enyinnia Clifford
-Full-stack Developer | AI Engineer
+### 🙋‍♂️ About Me
+## Enyinnia Clifford
+## Full-stack Developer | AI Engineer
 This project was built as the final capstone for a Tecvinson Frontend Training Cohort 2025. It represents the culmination of everything learned throughout the program; from component architecture and state management to responsive design and real-world API integration.
 
 📄 License
