@@ -2,7 +2,7 @@
 A modern, fully functional **e-commerce frontend** built with React, Vite, and React Router. This project was developed as the final capstone for the **Tecvinson Frontend Training Cohort 2025**.
 
 Live Demo → [https://ngshoppr.netlify.app](https://ngshoppr.netlify.app)
-
+Project Link → [https://shopperlite.netlify.app]
 
 ## 📋 Project Overview
 
@@ -49,7 +49,7 @@ All core user stories from the project brief have been implemented:
 - Responsive design across all screen sizes
 
 ## 📁 Project Structure
-
+```
 src/
 ├── components/          # Reusable UI components
 ├── context/             # Global state (CartContext)
@@ -58,7 +58,7 @@ src/
 ├── App.jsx              #Router
 ├── main.jsx
 └── index.css            #The major styling sheet
-
+```
 
 ## 🚀 Getting Started
 
@@ -94,9 +94,9 @@ Writing clean, maintainable React code
 
 
 ### 🙋‍♂️ About Me
-## Enyinnia Clifford
-## Full-stack Developer | AI Engineer
+# Enyinnia Clifford
+# Full-stack Developer | AI Engineer
 This project was built as the final capstone for a Tecvinson Frontend Training Cohort 2025. It represents the culmination of everything learned throughout the program; from component architecture and state management to responsive design and real-world API integration.
 
-📄 License
+### 📄 License
 This project is for educational purposes. Feel free to use it as a reference for your own learning.
