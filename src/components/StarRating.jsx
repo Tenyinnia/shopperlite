@@ -11,10 +11,10 @@ export default function StarRating({ rating = 0, size = 14 }) {
         <Star
           key={star}
           size={size}
-          className={`transition-colors ${
+          className={`rating-star ${
             star <= fullStars 
-              ? 'fill-yellow-400 text-yellow-400'   
-              : 'text-gray-300'                     
+              ? 'rated'   
+              : 'unrated'                     
           }`}
         />
       ))}

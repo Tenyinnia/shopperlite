@@ -5,7 +5,7 @@ export default function SideBar({
   onCategoryChange
 }) {
   return (
-    <div style={{display:'flex', flexDirection:'column', textAlign:'left'}}>
+    <div style={{display:'flex', flexDirection:'column', textAlign:'left'}} className="sidebar-content">
       <p style={{ margin: '0 0 1rem', fontSize: '.90rem', fontWeight: '500' }}>
         {selectedCategory === 'All' ? 'All Products' : `${CapitalizeCategory(selectedCategory)}`}
       </p>

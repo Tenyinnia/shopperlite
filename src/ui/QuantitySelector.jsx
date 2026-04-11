@@ -32,7 +32,7 @@ export default function QuantitySelector({
           disabled={quantity === 1}
           className="qty-cart-btn"
         >
-          <Minus size={13} className="text-gray-600" />
+          <Minus size={13} className="plus-minus" />
         </button>
       </div>
       
@@ -46,7 +46,7 @@ export default function QuantitySelector({
               disabled={quantity === maxQuantity}
               className="qty-cart-btn"
             >
-              <Plus size={13} className="text-gray-600" />
+              <Plus size={13} className="plus-add" />
             </button>
       </div>
             

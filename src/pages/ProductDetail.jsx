@@ -72,9 +72,8 @@ export default function ProductDetail() {
   }
 
   return (
-    <div className="detail-container">
-      <div className="detail-wrapper">
-      
+    
+    <div className="detail-wrapper">
       <BackButton />
 
       <div className="product-detail-content">
@@ -106,7 +105,7 @@ export default function ProductDetail() {
             <QuantitySelector 
               initialQuantity={1}
               maxQuantity={product.stock || 99}
-              onQuantityChange={(qty) => console.log('New quantity:', qty)} 
+              onQuantityChange={(qty) => (qty)} 
             />
             <button 
               onClick={handleAddToCart}
@@ -178,9 +177,9 @@ export default function ProductDetail() {
         </div>
       </div>
 
-      {/* You May Also Like Section */}
-      <YouMayAlsoLike category={product.category} currentProductId={product.id} />
-      </div>
+      
+        <YouMayAlsoLike category={product.category} currentProductId={product.id} />
     </div>
+   
   );
 }

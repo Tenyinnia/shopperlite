@@ -6,6 +6,7 @@ import Products from '../components/Products.jsx';
 import SortDropdown from '../ui/ProductQuickSearch.jsx';
 import ProductCount from '../components/ProductCount.jsx';
 import NoProductsFound from '../components/ProductNotFound.jsx';
+import FilterDropdown from '../ui/MobileCategoryFilter.jsx';
 
 export default function Shop() {
   const [searchParams] = useSearchParams();
@@ -92,7 +93,6 @@ export default function Shop() {
   });
 
   return (
-    <div className='container'>
       <div className='wrapper'>
         <aside className='sidebar'>
           <SideBar
@@ -102,15 +102,15 @@ export default function Shop() {
           />
         </aside>
 
-        <main>
-          <div className="count-product-filter">
-            <ProductCount count={sortedProducts.length} />
+        <div className="shop-container">
+          <ProductCount count={sortedProducts.length} />
+          <div className="sort-filter-container">
+            <FilterDropdown />
             <SortDropdown
               value={sortOption}
               onChange={setSortOption}
             />
           </div>
-
           {displayedProducts ? (
             <Products
               products={sortedProducts}
@@ -121,8 +121,7 @@ export default function Shop() {
           ) : (
             <NoProductsFound />
           )}
-        </main>
+        </div>
       </div>
-    </div>
   );
 }

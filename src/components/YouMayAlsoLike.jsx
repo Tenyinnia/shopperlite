@@ -37,7 +37,7 @@ export default function YouMayAlsoLike({ category, currentProductId }) {
         </Link>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div className="you-may-like-contents">
         <div className="product-cards">
               {products.map(product => (
                 <Link to={`/shop/${product.id}`} key={product.id} className="product-card">
