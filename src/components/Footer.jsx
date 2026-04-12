@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
-export default function Footer(){
+export default function AppFooter(){
     return(
         <>
-            <Footer className="footer-container">
+            <footer className="footer-container">
                 <div className="footer-content">
                     <div className="about-company">
                         <div className="about-company rows">
@@ -50,7 +50,7 @@ export default function Footer(){
                 </div>
                 <div className="line"></div>
                 
-            </Footer>
+            </footer>
         </>
     )
 }

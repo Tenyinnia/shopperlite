@@ -4,15 +4,13 @@ import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 import { CartProvider } from './context/CartContext';
-import Preloader from './components/PreLoader';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
-      <CartProvider>           {/* ← Wrap here */}
-        <Preloader />
+      <CartProvider>             
         <App />
       </CartProvider>
     </BrowserRouter>
-  </StrictMode>,
+  </StrictMode>
 )

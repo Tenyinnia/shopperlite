@@ -1,47 +1,38 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Footer from './components/Footer';
+import AppFooter from './components/Footer';
 import Home from './pages/Home';
 import Shop from './pages/Shop';
 import Blog from './pages/Blog';
 import ProductDetail from './pages/ProductDetail';
-import ViewMorePost from './pages/ViewMorePost'
-import Cart from './pages/Cart'
-import Preloader from './components/PreLoader';
-import { useState, useEffect } from 'react';
+import ViewMorePost from './pages/ViewMorePost';
+import Cart from './pages/Cart';
+import NotFound from './pages/NotFound';
+import Preloader from './components/PreLoader';  
 
 function App() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1200);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) return <Preloader />;
   return (
     <>
+    <Preloader />
+
       <Header />
       
       <main>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/shop" element={<Shop />} />
+          <Route path="/shop" element={<Shop />} /> 
           <Route path="/blog" element={<Blog />} />
           <Route path="/shop/:id" element={<ProductDetail />} />
           <Route path="/blog/:id" element={<ViewMorePost />} />
           <Route path="/cart" element={<Cart />} />
-
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
-      <Footer />
-      
+
+      <AppFooter />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

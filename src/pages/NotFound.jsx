@@ -7,7 +7,7 @@ export default function NotFound() {
       <div 
         className="not-found-page"
       >
-        <div className="text-center max-w-xl">
+        <div className="not-found-content">
           {/* Large 404 */}
           <h1 className="text-9xl font-bold text-gray-800 mb-4 tracking-tight">
             404
@@ -31,7 +31,7 @@ export default function NotFound() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
               to="/"
-              className="inline-flex items-center px-8 py-4 bg-black text-white font-medium rounded-full hover:bg-gray-800 transition-colors text-lg shadow-md hover:shadow-lg"
+              className="back-button"
             >
               ← Back to Home
             </Link>

@@ -103,13 +103,19 @@ export default function Shop() {
         </aside>
 
         <div className="shop-container">
-          <ProductCount count={sortedProducts.length} />
-          <div className="sort-filter-container">
-            <FilterDropdown />
-            <SortDropdown
-              value={sortOption}
-              onChange={setSortOption}
-            />
+          <div className="product-filter-sort">
+            <ProductCount count={sortedProducts.length} />
+            <div className="sort-filter">
+              <FilterDropdown
+                categories={categories}
+                selectedCategory={selectedCategory}
+                onCategoryChange={setSelectedCategory} 
+              />
+              <SortDropdown
+                value={sortOption}
+                onChange={setSortOption}
+              />
+            </div>
           </div>
           {displayedProducts ? (
             <Products

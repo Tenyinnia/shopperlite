@@ -74,6 +74,7 @@ export default function ProductDetail() {
   return (
     
     <div className="detail-wrapper">
+      <div className="product-detail-container">
       <BackButton />
 
       <div className="product-detail-content">
@@ -82,7 +83,7 @@ export default function ProductDetail() {
           <img
             src={product.thumbnail}
             alt={product.title}
-            className="max-h-[520px] object-contain mx-auto"
+            className="detail-image"
           />
         </div>
 
@@ -179,6 +180,7 @@ export default function ProductDetail() {
 
       
         <YouMayAlsoLike category={product.category} currentProductId={product.id} />
+      </div>
     </div>
    
   );

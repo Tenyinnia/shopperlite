@@ -22,13 +22,13 @@ export default function FilterDropdown({
         className="mobile-filter-btn"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <Filter size={18} />
+        <Filter size={12} />
         <span className="filter-text">
           {selectedCategory === 'All' 
             ? 'All Categories' 
             : CapitalizeCategory(selectedCategory)}
         </span>
-        {isOpen ? <X size={18} /> : <span className="arrow">▼</span>}
+        {isOpen ? <X size={12} /> : <span className="arrow">▼</span>}
       </button>
 
       {isOpen && (
@@ -47,3 +47,4 @@ export default function FilterDropdown({
     </div>
   );
 }
+
