@@ -594,27 +594,11 @@ margin: 1rem 0;
   );
 }
 
-/* Content */
-.hero-content-wrapper {
-  position: relative;
-  z-index: 10;
-  padding: 120px 5% 0;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.hero-text-container {
-  max-width: 620px;
-  
-}
-
 .hero-content {
   position: relative;
   z-index: 10;
   width: 80%;
-  max-width: 680px;
   text-align: left;
-  margin:2rem 0 3rem 2rem;
 }
 
 .new-season-label {
